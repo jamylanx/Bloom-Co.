@@ -1,21 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bloom & Co.</title>
     <link href="CSS/index.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Bloom & Co.</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="pages/shop.html">Shop</a>
-        <a href="pages/occasions.html">Occasions</a>
-        <a href="pages/custom.html">Custom Bouquet</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
+      <div class="nav-left">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" /></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="pages/shop.html">Shop</a>
+          <a href="pages/occasions.html">Occasions</a>
+          <a href="pages/custom.html">Custom Bouquet</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact.html">Contact</a>
+        </nav>
+      </div>
 
       <div class="icons">
         <i class="fa-solid fa-search"></i>
@@ -28,12 +32,12 @@
     <main>
       <section class="hero">
         <img src="assets/cover.jpg" alt="Flowers" />
-        <h2>Fresh Flowers, Thoughtfully Arranged</h2>
-        <a href="pages/shop.html" class="btn">Shop Now</a>
+        <h1>Fresh Flowers, Thoughtfully Arranged</h1>
         <p>
           Fresh flowers, thoughtfully arranged. Beautiful blooms for birthdays, anniversaries, celebrations,
           and all the little moments worth remembering.
         </p>
+        <a href="pages/shop.html">Shop Flowers</a>
       </section>
 
       <section class="featured">
@@ -97,7 +101,7 @@
         <h2>Shop by Occasion</h2>
         <div class="occasion-list">
           <!-- Birthday -->
-          <article>
+          <article class="occasion-card">
             <h3>Birthday</h3>
             <p>
               Celebrate their special day with beautiful, fresh flowers made to bring joy and brighten every
@@ -106,7 +110,7 @@
           </article>
 
           <!-- Anniversary-->
-          <article>
+          <article class="occasion-card">
             <h3>Anniversary</h3>
             <p>
               Celebrate your love with beautiful, romantic flowers designed to make every anniversary
@@ -115,13 +119,13 @@
           </article>
 
           <!-- Wedding -->
-          <article>
+          <article class="occasion-card">
             <h3>Wedding</h3>
             <p>Beautiful floral arrangements crafted to make your special day unforgettable.</p>
           </article>
 
           <!-- Romantic-->
-          <article>
+          <article class="occasion-card">
             <h3>Romantic</h3>
             <p>Express your love with fresh, romantic flowers made for every special moment.</p>
           </article>
@@ -134,5 +138,11 @@
         <a href="pages/custom.html" class="btn">Start Creating</a>
       </section>
     </main>
+    <footer>
+      <p>&copy; <span id="year"></span>Bloom & Co. | Jaime Vasquez.</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
