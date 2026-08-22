@@ -1,6 +1,9 @@
 nav {
   cursor: pointer;
 }
+.icons {
+  cursor: pointer;
+}
 
 * {
   box-sizing: border-box;
@@ -9,4 +12,24 @@ nav {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
 }
